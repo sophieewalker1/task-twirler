@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Roboto',
     monospace;
 }
+
+/* Light Theme */
+.light-theme {
+  background-color: white;
+  color: black;
+}
+
+/* Dark Theme */
+.dark-theme {
+  background-color: rgb(36, 36, 36);
+  color: white;
+}
+

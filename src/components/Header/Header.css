@@ -1,0 +1,55 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--header-bg, #ffffff);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Header styling for light/dark themes */
+  .light-theme header {
+    --header-bg: #ffffff;
+    --header-text: #333333;
+    --header-border: #eeeeee;
+  }
+  
+  .dark-theme header {
+    --header-bg: #1a1a1a;
+    --header-text: #f8f8f8;
+    --header-border: #333333;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: var(--header-text, #333333);
+    transition: color 0.3s ease;
+  }
+  
+  /* Theme toggle button styling */
+  header button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
+  
+  header button:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  
+  .dark-theme header button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  header .material-icons {
+    font-size: 1.5rem;
+    color: var(--header-text, #333333);
+  }
